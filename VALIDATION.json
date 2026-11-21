@@ -1,0 +1,103 @@
+{
+  "distribution": "complete source installer; no previous update required",
+  "engine_version": "0.5.3",
+  "editor_version": "1.1.1",
+  "layout": [
+    "3d-engine",
+    "jsd-engine-editor",
+    "3d-game"
+  ],
+  "bundled_project_source_asset_files": 2865,
+  "fresh_source_builds": [
+    "engine and bundled SDL/Jolt + shared/static SDK + showcase",
+    "independent editor and its own runtime install"
+  ],
+  "installer_safety_cases_passed": 13,
+  "installer_safety_cases": [
+    {
+      "case": "complete source check in renamed three-folder layout; no writes",
+      "passed": true
+    },
+    {
+      "case": "source-only install validates without building or dependencies",
+      "passed": true
+    },
+    {
+      "case": "existing game content preserved",
+      "passed": true
+    },
+    {
+      "case": "corrupt source rejected before dependency installation",
+      "passed": true,
+      "subprocesses_started": 0,
+      "files_changed": 0
+    },
+    {
+      "case": "missing bundled dependency rejected before commands",
+      "passed": true,
+      "subprocesses_started": 0,
+      "files_changed": 0
+    },
+    {
+      "case": "self-consistent unexpected engine version rejected",
+      "passed": true,
+      "subprocesses_started": 0,
+      "files_changed": 0
+    },
+    {
+      "case": "unexpected editor directory declaration rejected",
+      "passed": true,
+      "subprocesses_started": 0,
+      "files_changed": 0
+    },
+    {
+      "case": "foreign editor build cache blocks both project builds",
+      "passed": true,
+      "subprocesses_started": 0,
+      "files_changed": 0
+    },
+    {
+      "case": "newer engine cache rejected before commands",
+      "passed": true,
+      "subprocesses_started": 0,
+      "files_changed": 0
+    },
+    {
+      "case": "game symlink cannot alias the engine",
+      "passed": true,
+      "subprocesses_started": 0,
+      "files_changed": 0
+    },
+    {
+      "case": "symlink source rejected before executing code",
+      "passed": true,
+      "subprocesses_started": 0,
+      "files_changed": 0
+    },
+    {
+      "case": "incomplete update journal blocks installation",
+      "passed": true,
+      "subprocesses_started": 0,
+      "files_changed": 0
+    },
+    {
+      "case": "concurrent full installation rejected",
+      "passed": true,
+      "subprocesses_started": 0,
+      "files_changed": 0
+    }
+  ],
+  "ctest": {
+    "engine_passed": 11,
+    "editor_passed": 3,
+    "version_guard_unit_cases": 35
+  },
+  "installed_runtime_smoke": {
+    "editor": "2 validated offscreen frames; LD_LIBRARY_PATH unset",
+    "showcase": "2 validated cave/refinery frames at t=116; LD_LIBRARY_PATH unset"
+  },
+  "post_install_integrity_check": "passed",
+  "game_folder": "empty; no generated game files",
+  "validation_environment": "Linux x86-64; GCC 14.2; software Mesa/EGL headless validation",
+  "code_distribution": "bundled source only; no compiled artifacts or prebuilds"
+}
