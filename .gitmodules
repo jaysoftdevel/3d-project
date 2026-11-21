@@ -1,0 +1,9 @@
+[submodule "3d-engine"]
+	path = 3d-engine
+	url = https://github.com/jaysoftdevel/3d-engine.git
+[submodule "jsd-engine-editor"]
+	path = jsd-engine-editor
+	url = https://github.com/jaysoftdevel/jsd-engine-editor.git
+[submodule "red-wasteland"]
+	path = red-wasteland
+	url = https://github.com/jaysoftdevel/red-wasteland.git
